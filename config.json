@@ -1,0 +1,40 @@
+{
+  "panel": {
+    "rows": 32,
+    "cols": 64,
+    "chain_length": 2,
+    "parallel": 1,
+    "hardware_mapping": "adafruit-hat",
+    "gpio_slowdown": 2,
+    "brightness": 70,
+    "pwm_bits": 11
+  },
+  "display": {
+    "label_font": "5x7.bdf",
+    "time_font": "6x10.bdf"
+  },
+  "transit": {
+    "agency": "SF",
+    "line": "12",
+    "stops": [
+      {
+        "direction": "IN",
+        "destination": "NOB HILL",
+        "stop_code": "15856"
+      },
+      {
+        "direction": "OUT",
+        "destination": "MISSION",
+        "stop_code": "15857"
+      }
+    ],
+    "poll_seconds": 150,
+    "max_arrivals": 2
+  },
+  "weather": {
+    "enabled": true,
+    "latitude": 37.7961,
+    "longitude": -122.4133,
+    "poll_seconds": 600
+  }
+}

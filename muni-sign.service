@@ -1,0 +1,15 @@
+[Unit]
+Description=Muni 12 Pacific arrival sign
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=__APP_DIR__
+ExecStart=/usr/bin/python3 __APP_DIR__/muni_sign.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
